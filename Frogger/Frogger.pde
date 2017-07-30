@@ -1,6 +1,6 @@
 int frogHopDist=25;
 int frogX=200;
-int frogY=300;
+int frogY=380;
 Car c1 = new Car (25,50,75,3);
 Car c2 = new Car (350,100,75,3);
 Car c3 = new Car (250,150,75,3);
@@ -11,8 +11,8 @@ size(400,400);
 
 }
 void draw(){
-  background(175,119,212);
-  fill(93, 171, 101);
+  background(51,153,255);
+  fill(153, 153, 0);
   ellipse(frogX,frogY,50,50);
   boundary();
   c1.display();
@@ -125,7 +125,7 @@ public int getCarSpeed(){
  boolean intersects(Car c1) {
 if ((frogY > c1.getCarY() && frogY < c1.getCarY()+50) && (frogX > c1.getCarX() && frogX < c1.getCarX()+c1.getCarLength())){
           frogX = 200;
-          frogY = 300;
+          frogY = 380;
           return true;
 }  else{
         return false;
